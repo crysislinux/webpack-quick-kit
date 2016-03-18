@@ -32,6 +32,10 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'style!css'
     }, {
+      test: /\.scss$/,
+      exclude: /node_modules/,
+      loader: 'style!css!sass'
+    }, {
       test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
       loader: "file"
     }, {
